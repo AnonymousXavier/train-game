@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Train Game"
+run/main_scene="uid://dmkbj1naasv05"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://Autoload/Global.gd"
+SceneInstances="*res://Autoload/Scene_Instances.gd"
+
+[layer_names]
+
+3d_render/layer_1="Behind Player"
+3d_render/layer_2="Player"
+3d_render/layer_3="In Front of Player"
+3d_render/layer_4="Player Sihlouette"
+3d_physics/layer_1="Objects"
+3d_physics/layer_2="Interactables"
+3d_physics/layer_3="Player"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
