@@ -1,0 +1,8 @@
+~ start
+You: Wh-what Happened here!?
+NPC: I-[wait=0.5] I [wait=0.5] -I...
+You: Talk, dammit!
+NPC: I was on my way to get breakfast [wait=0.5] when I found him lying there I swear, [wait=0.5] I know nothing else
+You: Fuck
+NPC: Looks like a member of the Wold Corps
+=> END

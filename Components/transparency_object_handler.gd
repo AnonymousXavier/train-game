@@ -15,6 +15,9 @@ func _ready() -> void:
 	ray_cast_delay_timer.start()
 	
 func update_objects_transparency() -> void:
+	if not target_to_always_show:
+		return
+		
 	for hidden_object in hidden_objects:
 		if hidden_object not in objects_blocking_player:
 			var object_mesh = hidden_object.get_parent() as MeshInstance3D

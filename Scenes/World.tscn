@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmkbj1naasv05"]
+[gd_scene load_steps=9 format=3 uid="uid://dmkbj1naasv05"]
 
 [ext_resource type="PackedScene" uid="uid://bqvb44fsxw178" path="res://Scenes/train.tscn" id="1_j0p05"]
 [ext_resource type="PackedScene" uid="uid://wpw0htpmjsu6" path="res://Scenes/Entities/player.tscn" id="2_5nsto"]
 [ext_resource type="Script" uid="uid://davrons62mpw0" path="res://Scenes/camera_3d.gd" id="3_5nsto"]
-[ext_resource type="PackedScene" uid="uid://b2xpwkp8btl70" path="res://Components/transparency_object_handler.tscn" id="3_gjpho"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5nsto"]
 
@@ -41,11 +40,6 @@ script = ExtResource("3_5nsto")
 target = NodePath("../Player")
 left_limit_node = NodePath("../Camera Limits/Left")
 right_limit_node = NodePath("../Camera Limits/Right")
-
-[node name="Transparency Object Handler" parent="Camera3D" node_paths=PackedStringArray("target_to_always_show", "camera") instance=ExtResource("3_gjpho")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0034315586, -0.04103756, 0.019723892)
-target_to_always_show = NodePath("../../Player")
-camera = NodePath("..")
 
 [node name="Camera Overlays" type="Node3D" parent="."]
 

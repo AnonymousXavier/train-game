@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bevlpnb1qvvyl"]
+
+[ext_resource type="Script" uid="uid://davrons62mpw0" path="res://Scenes/camera_3d.gd" id="1_4pf6w"]
+[ext_resource type="PackedScene" uid="uid://b2xpwkp8btl70" path="res://Components/transparency_object_handler.tscn" id="2_6sb8y"]
+
+[node name="Camera3D" type="Camera3D"]
+cull_mask = 1047559
+script = ExtResource("1_4pf6w")
+
+[node name="Transparency Object Handler" parent="." instance=ExtResource("2_6sb8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0034315586, -0.04103756, 0.019723892)

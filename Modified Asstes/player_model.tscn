@@ -1,18 +1,44 @@
 [gd_scene load_steps=32 format=4 uid="uid://cht3bkrdc8dtb"]
 
-[ext_resource type="Material" uid="uid://dgkav1y1efwa7" path="res://Materials/Outliner.tres" id="1_6o1rp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rclwq"]
+render_priority = 1
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wjio8"]
 resource_name = "Main"
+next_pass = SubResource("StandardMaterial3D_rclwq")
 cull_mode = 2
 albedo_color = Color(0.015686277, 0.58823526, 1, 1)
 roughness = 0.5
+stencil_mode = 2
+stencil_flags = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6o1rp"]
+render_priority = 1
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5v788"]
 resource_name = "Main_Light"
+next_pass = SubResource("StandardMaterial3D_6o1rp")
 cull_mode = 2
 albedo_color = Color(0.9066569, 0.7179615, 0.44712508, 1)
 roughness = 0.5
+stencil_mode = 2
+stencil_flags = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dejkn"]
 resource_name = "Character_CUBezierCurve_000"
@@ -138,13 +164,6 @@ bind/28/name = &"PoleTarget.R"
 bind/28/bone = -1
 bind/28/pose = Transform3D(1, 0, 7.152559e-07, -5.684342e-14, 1.0000001, -1.192093e-07, -7.152557e-07, 0, 1.0000001, 0.5424929, -0.24610685, -0.9630325)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi16t"]
-resource_name = "Main2"
-next_pass = ExtResource("1_6o1rp")
-cull_mode = 2
-albedo_color = Color(0.50789744, 0.68863463, 0.7066566, 1)
-roughness = 0.5
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_nrhuo"]
 resource_name = "Character_CUBezierCurve_002"
 _surfaces = [{
@@ -182,7 +201,7 @@ _surfaces = [{
 "index_count": 252,
 "index_data": PackedByteArray("GgAmACcAGgAoACYAAwAmACgAAwAoAAQAGgAEACgAAwAEAAUAGgAAAAQAAwABACYAGgACAAAABwAmAAEAGgAcAAIABwApACYAGgAeABwAGgAnAB4AHQACABwAHQAcAB4AHQAKAAIAGwAnACYAGwAmACkAGwAeACcAHQAMAAoABwAqACkAGwApACoABwAGACoAGwArAB4AEQAqAAYAGwAqACwAEQAlACoAGwAtACsAGwAsAC0ALgAsACoALgAqACUALgAtACwAEQAvACUALgAlAC8AEQASAC8AEAAvABIAEAAUAC8AEwAvABQALgAvACQAEwAkAC8AEwAjACQALgAkACMAEwAIACMAGAAjAAgALgAjACAALgAgAC0AGAAiACMAMAAgACMAMAAjACIAMAAtACAAGAAxACIAMAAiADEAGAAZADEAFQAxABkAFQAXADEAFgAxABcAMAAxACEAFgAhADEAMAAyAC0AFgAzACEAMAAhADMAMAAzADIAFgAPADMADgAzAA8AHwAtADIAHwAyADMAHwArAC0ADgA0ADMAHwAzADQAHwAeACsADgA1ADQAHwA0ADUADgAJADUAHwA2AB4AHwA1ADYAHQAeADYAHQA2ADUACwA1AAkAHQA1ADcACwA3ADUAHQA3AAwACwAMADcACwANAAwA"),
 "lods": [0.0135833165, PackedByteArray("GgABABsAAwABABoAAwAEAAUAAwAaAAQAGgAAAAQAGgACAAAAGgAcAAIAHQACABwAHQAKAAIAGgAeABwAHQAcAB4AGgAbAB4AHQAMAAoACwAMAB0ACwANAAwACwAdAAkAHQAeAB8AHQAfAAkAGwAgAB4AHwAeACAAHwAhAAkADgAJACEADgAhAA8AFgAPACEAIgAhAB8AIgAfACAAFgAhABUAIgAVACEAFgAVABcAGAAVACIAGAAZABUAGAAiACMAIgAgACMAGAAjAAgAEwAIACMAJAAjACAAEwAjACQAJAAgABsAEwAkABAAEwAQABQAJAAbACUAJAAlABAAGwABACUABwAlAAEABwAGACUAEQAlAAYAEQAQACUAEQASABAA"), 0.103127964, PackedByteArray("AAABAAIAAwABAAAAAwAAAAQAAwAEAAUAAgABAAYABwAGAAEACAACAAYACAAJAAIACgACAAkACwAKAAkACwAMAAoACwANAAwADgAJAA8ACAAPAAkACAAGABAAEQAQAAYAEQASABAAEwAIABAAEwAQABQACAAVAA8AFgAPABUAFgAVABcAGAAVAAgAGAAZABUA")],
-"material": SubResource("StandardMaterial3D_gi16t"),
+"material": SubResource("StandardMaterial3D_5v788"),
 "name": "Main2",
 "primitive": 3,
 "skin_data": PackedByteArray("AgAFAA4AAACcg/VnbRQAAAIADgAFAAAAMowKYsIRAAACAAUADgASALCDsmlOCU4JAgAOAAUADwBRhmNUkiS3AAIABQAOAA8AqIM5Xxwc/wACAAUADgAPAGCC4kPpMtIGAgAOABYABQCVsjg5Rw7qBQIADgAFABYAKphkWDMKPAUCAAMAFgAYAJ/l8Ay3BrcGAgASAAUAAAAyjApiwhEAAAIABQASAAAAnIP1Z20UAAACABIABQATAFGGY1SSJLcAAgAFABIAEwCogzlfHBz/AAIABQASABMAYILiQ+ky0gYCABIABQAYACqYZFgzCjwFAgASABgABQCVsjg5Rw7qBQIAFgAOAAAAGs9qJXkLAAACAA4AFgAEAKHDDiRDFwoBAgAWAA4AAACQycsgoxUAAAIAFgADAAAAyuaWD50JAAACABYAAwAOAGbe1xg/BoECAgAYABIAAAAaz2oleQsAAAIAEgAYAAQAocMOJEMXCgECABgAEgAAAJDJyyCjFQAAAgAYAAMAAADK5pYPnQkAAAIAGAADABIAZt7XGD8GgQICAAUADgAAAGGGgFAcKQAAAgAOAAUAAAA7nDJJkRoAAAIABQAOABIAvoaGU90S3RICAAUAEgAAAGGGgFAcKQAAAgAFAA4AEgA2kF0zNR41HgIAEgAFAAAAO5wySZEaAAACAA4AEgAFAOzUgQ+BDw4MAgASABgABQDNzk8h/wvjAwIAEgAYAAAAo+hkDvcIAAACAA4AEgAWAH7udgd2B5QCAgAOABYAAACj6GQO9wgAAAIADgAWAAUAzc5PIf8L4wMCAA4ABQAAAMiMhlavHAAAAgAOAAUAAABejqFJ/ycAAAIABQAOAAAAXoZBQ142AAACAA4ABQAWALqar1JDElEAAgAOAAUAFgAGtok4DwxfBQIABQAOABIAfp7oJcsdyx0CAA4ABQAWAPi3/TRaEq8AAgAOABIABQA5t6kYqRhyFwIADgAFABYAI9W8HlAIzgMCABYADgAAAIvdbREGEQAAAgASAAUAGAAj1bweUAjOAwIAGAASAAAAi91tEQYRAAACABIABQAYAPi3/TRaEq8AAgASAAUAGAAGtok4DwxfBQIAEgAFABgAupqvUkMSUQACABIABQAAAMiMhlavHAAAAgASAAUAAABejqFJ/ycAAAIABQASAAAAXoZBQ142AAA="),
