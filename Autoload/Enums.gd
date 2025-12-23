@@ -1,0 +1,4 @@
+extends Node
+
+enum STATES {IDLE, RUN}
+enum GROUP_NAME {DIALOGUE_ACTIONABLES}

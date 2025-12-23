@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+signal initiated_dialogue(Area2D)
+
 @onready var model: Node3D = $Node3D
 @onready var animation_handler: Node3D = $"Animation Handler"
 @onready var collider = $CollisionShape3D
@@ -20,6 +22,7 @@ func handle_dialogue_interactions():
 	if Input.is_action_just_pressed("interact"):
 		if dialogue_interactables_finder.has_overlapping_areas():
 			var dialogue_interactable = dialogue_interactables_finder.get_overlapping_areas()[0]
+			initiated_dialogue.emit(dialogue_interactable)
 			dialogue_interactable.start_dialogue()
 
 func _physics_process(delta: float) -> void:

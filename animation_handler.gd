@@ -5,8 +5,7 @@ extends Node3D
 var anim_player: AnimationPlayer
 var move_velocity = Vector3.ZERO
 
-enum STATES {IDLE, RUN}
-var state: STATES = STATES.IDLE
+var state: Enums.STATES = Enums.STATES.IDLE
 
 func _ready() -> void:
 	anim_player = model.get_node("AnimationPlayer") as AnimationPlayer
@@ -18,19 +17,19 @@ func _process(_delta: float) -> void:
 	
 func state_handler():
 	if move_velocity != Vector3.ZERO:
-		if state == STATES.RUN:
+		if state == Enums.STATES.RUN:
 			anim_player.animation_finished.emit("")
-		state = STATES.RUN
+		state = Enums.STATES.RUN
 	else:
-		if state == STATES.IDLE:
+		if state == Enums.STATES.IDLE:
 			anim_player.animation_finished.emit("")
-		state = STATES.IDLE
+		state = Enums.STATES.IDLE
 	
 func _on_animation_finished(_anim_name: String):
 	match state:
-		STATES.IDLE:
+		Enums.STATES.IDLE:
 			anim_player.play("Idle")
-		STATES.RUN:
+		Enums.STATES.RUN:
 			anim_player.play("Run")
 	
 	

@@ -4,7 +4,7 @@
 render_priority = 1
 transparency = 1
 shading_mode = 0
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(1, 1, 1, 0)
 grow = true
 grow_amount = 0.01
 stencil_mode = 3
