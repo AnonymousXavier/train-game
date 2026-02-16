@@ -1,8 +1,8 @@
-[gd_scene load_steps=35 format=4 uid="uid://4mxtpavvsglf"]
+[gd_scene format=4 uid="uid://4mxtpavvsglf"]
 
-[ext_resource type="Script" uid="uid://kgb6qnl6fvqk" path="res://Components/player_sihlouette_marker.gd" id="1_2h2c8"]
+[ext_resource type="Script" uid="uid://kgb6qnl6fvqk" path="res://Scenes/Components/player_sihlouette_marker.gd" id="1_2h2c8"]
 [ext_resource type="Shader" uid="uid://ch2esbsokvprl" path="res://Shaders/player_occulision_shader.gdshader" id="3_p2amb"]
-[ext_resource type="PackedScene" uid="uid://cs5fg2twu6f4l" path="res://Components/animation_handler.tscn" id="3_uq0mn"]
+[ext_resource type="PackedScene" uid="uid://cs5fg2twu6f4l" path="res://Scenes/Components/animation_handler.tscn" id="3_uq0mn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q06sr"]
 render_priority = 0

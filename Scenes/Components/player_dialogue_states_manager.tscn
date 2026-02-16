@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://8raypjtinaxn"]
+
+[ext_resource type="Script" uid="uid://c26l6ohrckv34" path="res://Scenes/Components/player_dialogue_states_manager.gd" id="1_s3c5v"]
+[ext_resource type="PackedScene" uid="uid://70qjac2l5rn1" path="res://Scenes/Components/dialogue_actionable.tscn" id="2_sfq6e"]
+[ext_resource type="Resource" uid="uid://dta8oe6i78vs8" path="res://Dialogues/Day 1/First_Investigation (Just heard Scream).dialogue" id="3_cxxdx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sfq6e"]
+radius = 2.0
+
+[node name="Player Dialogue States Manager" type="Node3D" unique_id=1837422323]
+script = ExtResource("1_s3c5v")
+
+[node name="Just Heard Scream Dialogue" parent="." unique_id=856959269 instance=ExtResource("2_sfq6e")]
+visible = false
+dialogue_resource = ExtResource("3_cxxdx")
+start_on_player_detected = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Just Heard Scream Dialogue" unique_id=695694705]
+shape = SubResource("SphereShape3D_sfq6e")
+
+[node name="DelayTimer" type="Timer" parent="." unique_id=348917725]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="DelayTimer" to="." method="_on_game_start_delay_timer_timeout"]

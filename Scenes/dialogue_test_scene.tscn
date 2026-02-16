@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://w7m4xynrn3c2"]
+[gd_scene format=3 uid="uid://w7m4xynrn3c2"]
 
 [ext_resource type="PackedScene" uid="uid://wpw0htpmjsu6" path="res://Scenes/Entities/player.tscn" id="1_uqmm3"]
 [ext_resource type="Script" uid="uid://davrons62mpw0" path="res://Scenes/camera_3d.gd" id="2_b2eo6"]
 [ext_resource type="PackedScene" uid="uid://cht3bkrdc8dtb" path="res://Modified Asstes/player_model.tscn" id="3_4y30i"]
-[ext_resource type="PackedScene" uid="uid://cs5fg2twu6f4l" path="res://Components/animation_handler.tscn" id="4_rfoli"]
-[ext_resource type="PackedScene" uid="uid://70qjac2l5rn1" path="res://Components/dialogue_actionable.tscn" id="5_01nsg"]
-[ext_resource type="Resource" uid="uid://docs2umlspg1x" path="res://Dialogues/test.dialogue" id="6_xqrta"]
+[ext_resource type="PackedScene" uid="uid://cs5fg2twu6f4l" path="res://Scenes/Components/animation_handler.tscn" id="4_rfoli"]
+[ext_resource type="PackedScene" uid="uid://70qjac2l5rn1" path="res://Scenes/Components/dialogue_actionable.tscn" id="5_01nsg"]
+[ext_resource type="Resource" uid="uid://docs2umlspg1x" path="res://Dialogues/Day 1/First Meetup.dialogue" id="6_xqrta"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b2eo6"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

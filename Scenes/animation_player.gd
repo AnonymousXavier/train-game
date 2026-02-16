@@ -8,7 +8,6 @@ var npc_animPlayer: AnimationPlayer
 	
 func play_animation(value: int):
 	var anim_name: String
-	print(value)
 	match value:
 		Enums.STATES.IDLE:
 			anim_name = "Idle"

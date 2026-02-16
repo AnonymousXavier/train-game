@@ -6,7 +6,6 @@ extends Camera3D
 @export var lerp_speed: float = 2.0
 @export var track_z_direction: bool = false
 
-@onready var transparency_object_handler: Node3D = $"Transparency Object Handler"
 @onready var default_position: Vector3
 
 var half_camera_width: float ##
