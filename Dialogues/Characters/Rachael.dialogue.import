@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ct68lu8cwy7fn"
+path="res://.godot/imported/Rachael.dialogue-3c734bd7554a75b8aef2951c65fb6563.tres"
+
+[deps]
+
+source_file="res://Dialogues/Characters/Rachael.dialogue"
+dest_files=["res://.godot/imported/Rachael.dialogue-3c734bd7554a75b8aef2951c65fb6563.tres"]
+
+[params]
+
+defaults=true

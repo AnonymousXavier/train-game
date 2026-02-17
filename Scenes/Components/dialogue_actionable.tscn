@@ -19,7 +19,7 @@ collision_mask = 4
 script = ExtResource("1_421l1")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=2053541854]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4832394, 0)
 pixel_size = 0.01
 billboard = 1
 double_sided = false

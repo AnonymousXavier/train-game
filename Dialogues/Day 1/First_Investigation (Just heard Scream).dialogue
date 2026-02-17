@@ -2,7 +2,6 @@
 ???: AHHHHHHHHHHH!!!!!!!!!!!!!
 set GameStates.has_heard_scream_from_seeing_dead_body = true
 - Investigate
-	You: Sounds Close to the Lower Class Cargo
 	set GameStates.chose_to_investigate_scream = true
 - Do Nothing => END
 => END

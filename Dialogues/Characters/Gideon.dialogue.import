@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://nrcr50h8v7xa"
+path="res://.godot/imported/Gideon.dialogue-b40d933f0fc13deb9b20682137d2542e.tres"
+
+[deps]
+
+source_file="res://Dialogues/Characters/Gideon.dialogue"
+dest_files=["res://.godot/imported/Gideon.dialogue-b40d933f0fc13deb9b20682137d2542e.tres"]
+
+[params]
+
+defaults=true
