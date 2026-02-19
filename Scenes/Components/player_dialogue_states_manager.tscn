@@ -14,6 +14,7 @@ script = ExtResource("1_s3c5v")
 visible = false
 start_on_player_detected = false
 is_designed_to_start_with_a_timer = true
+delete_on_dialogue_finished = true
 dialogue_resource = ExtResource("3_cxxdx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Just Heard Scream Dialogue" unique_id=695694705]

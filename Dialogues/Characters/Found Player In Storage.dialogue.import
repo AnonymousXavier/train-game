@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bahrhjol240yw"
+path="res://.godot/imported/Found Player In Storage.dialogue-709d70bc164192b8f67744ac7f997abb.tres"
+
+[deps]
+
+source_file="res://Dialogues/Characters/Found Player In Storage.dialogue"
+dest_files=["res://.godot/imported/Found Player In Storage.dialogue-709d70bc164192b8f67744ac7f997abb.tres"]
+
+[params]
+
+defaults=true

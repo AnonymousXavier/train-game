@@ -28,3 +28,7 @@ static func tween_look_at(node: Node3D, direction: Vector3, delta: float,axis: V
 	var rotation_step = rotation_speed * delta
 	angle_diff = clamp(angle_diff, -rotation_step, rotation_step)
 	node.rotate(axis, angle_diff)
+
+static func move_caught_player_in_storage_room_scene(id: Enums.NPCS):
+	var target_marker = SceneInstances.npc_target_positions_for_caught_player_in_storage_room_scene[id]
+	move_npc(id, target_marker.global_position, SceneInstances.player.global_position)

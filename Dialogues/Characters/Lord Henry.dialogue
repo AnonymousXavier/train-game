@@ -1,3 +1,6 @@
 ~ start
-Lord Henry: Let me be
+if not GameStates.scream_scene_done:
+	Lord Henry: Let me be
+else:
+	The Noble Ignores you, His Bodyguard Gideon, Sends you back
 => END

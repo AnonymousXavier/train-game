@@ -10,6 +10,7 @@ const npc_dialogue_gideon = preload("uid://nrcr50h8v7xa")
 const npc_dialogue_henry = preload("uid://ku2u7bq0k2av")
 const npc_dialogue_maidbot = preload("uid://clvsq4mo5clgx")
 const npc_dialogue_rachael = preload("uid://ct68lu8cwy7fn")
+const npc_dialogue_dead_npc = preload("uid://cd3eynxykidcl")
 
 var npc_dialogues: Dictionary[Enums.NPCS, DialogueResource] = {
 	Enums.NPCS.DIANA: npc_dialogue_diana,
@@ -17,7 +18,8 @@ var npc_dialogues: Dictionary[Enums.NPCS, DialogueResource] = {
 	Enums.NPCS.FESTUS: npc_dialogue_festus,
 	Enums.NPCS.GIDEON: npc_dialogue_gideon,
 	Enums.NPCS.MAID_BOT: npc_dialogue_maidbot,
-	Enums.NPCS.RACHAEL: npc_dialogue_rachael
+	Enums.NPCS.RACHAEL: npc_dialogue_rachael,
+	Enums.NPCS.DEAD_NPC: npc_dialogue_dead_npc
 }
 
 var npc_models: Dictionary[Enums.NPCS, PackedScene] = {
@@ -26,5 +28,6 @@ var npc_models: Dictionary[Enums.NPCS, PackedScene] = {
 	Enums.NPCS.FESTUS: male_model_scene,
 	Enums.NPCS.GIDEON: male_model_scene,
 	Enums.NPCS.MAID_BOT: female_model_scene,
-	Enums.NPCS.RACHAEL: female_model_scene
+	Enums.NPCS.RACHAEL: female_model_scene,
+	Enums.NPCS.DEAD_NPC: male_model_scene
 }

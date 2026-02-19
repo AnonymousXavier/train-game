@@ -7,3 +7,4 @@ extends Node
 
 var npc_scenes: Dictionary[Enums.NPCS, NPC] = {}
 var npc_target_positions_for_scream_scene: Dictionary[Enums.NPCS, Marker3D] = {}
+var npc_target_positions_for_caught_player_in_storage_room_scene: Dictionary[Enums.NPCS, Marker3D] = {}

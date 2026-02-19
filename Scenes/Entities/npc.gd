@@ -2,6 +2,7 @@ extends Node3D
 class_name NPC
 
 @export var npc_id: Enums.NPCS
+@export var hint_label_text: String = "Text (X)"
 
 @onready var navAgent: NavigationAgent3D = $NavigationAgent3D
 @onready var model: Node3D
@@ -21,13 +22,12 @@ func _ready() -> void:
 		dialogue_actionable.dialogue_resource = Cache.npc_dialogues[npc_id]
 		
 	%tag.text = Enums.NPCS.keys()[npc_id]
+	dialogue_actionable.update_hint_label_to(hint_label_text)
 
 func _process(delta: float) -> void:
 	if not navAgent.is_navigation_finished():
 		pathfind(delta)
 		focus_on_target(delta)
-		
-		print("Path Finding")
 
 func move_to(target_position: Vector3):
 	navAgent.target_position = target_position

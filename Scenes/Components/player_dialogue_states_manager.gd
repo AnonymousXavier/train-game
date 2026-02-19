@@ -5,7 +5,3 @@ extends Node3D
 
 func _on_game_start_delay_timer_timeout() -> void: ## Implements the beginning scream
 	just_heard_scream_dialogue.start_dialogue()
-	
-	await just_heard_scream_dialogue.dialogue_finished
-	just_heard_scream_dialogue.queue_free()
-	

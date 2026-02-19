@@ -14,3 +14,5 @@ func _ready() -> void:
 	for marker in markers.get_children():
 		SceneInstances.npc_target_positions_for_scream_scene[Enums.NPCS.values()[id]] = marker
 		id += 1
+		
+	SceneInstances.npc_target_positions_for_caught_player_in_storage_room_scene[Enums.NPCS.MAID_BOT] = $"Markers/Caught Player Snooping in Storage Room/MaidBot"

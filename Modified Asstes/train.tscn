@@ -758,6 +758,7 @@ shape = SubResource("ConcavePolygonShape3D_3akwa")
 
 [node name="Cube_024" type="MeshInstance3D" parent="NavRegion/Dinning Cargo" unique_id=455015403]
 transform = Transform3D(-1, 0, 0, 0, 0.9999999, 0, 0, 0, -0.99999994, 0, 0, 3.6540804)
+visible = false
 layers = 4
 mesh = SubResource("ArrayMesh_20lfk")
 skeleton = NodePath("")
@@ -770,6 +771,7 @@ shape = SubResource("ConcavePolygonShape3D_grcn3")
 
 [node name="Cube_025" type="MeshInstance3D" parent="NavRegion/Dinning Cargo" unique_id=744393947]
 transform = Transform3D(0, 0, -0.30263555, 0, 0.9999999, 0, 0.76193017, 0, 0, -1.5121994, 0, 3.9025164)
+visible = false
 layers = 4
 mesh = SubResource("ArrayMesh_nudtn")
 skeleton = NodePath("")
@@ -838,6 +840,7 @@ shape = SubResource("ConcavePolygonShape3D_k2o6o")
 
 [node name="Cube_031" type="MeshInstance3D" parent="NavRegion/Dinning Cargo" unique_id=244586793]
 transform = Transform3D(0, 0, -0.30263555, 0, 0.9999999, 0, 0.76193017, 0, 0, 1.9209566, 0, 3.8667417)
+visible = false
 layers = 4
 mesh = SubResource("ArrayMesh_nudtn")
 skeleton = NodePath("")
@@ -850,6 +853,7 @@ shape = SubResource("ConcavePolygonShape3D_67nu6")
 
 [node name="Cube_032" type="MeshInstance3D" parent="NavRegion/Dinning Cargo" unique_id=1605883759]
 transform = Transform3D(-8.246441e-08, 0, 0.30263555, 0, 0.9999999, 0, -0.76193017, 0, -3.5762787e-07, 1.4660826, 0, 3.8667417)
+visible = false
 layers = 4
 mesh = SubResource("ArrayMesh_nudtn")
 skeleton = NodePath("")
