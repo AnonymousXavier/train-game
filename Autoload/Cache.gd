@@ -1,8 +1,13 @@
 extends Node
 
-const female_model_scene = preload("uid://cxdg0qi1ntw28")
-const male_model_scene = preload("uid://bg48rw8mdtw8d")
-
+const dead_npc_model = preload("uid://d36xurfnoormt")
+const detective_model = preload("uid://batybj4fh3dx3")
+const diana_model = preload("uid://cse7mmesrdd4u")
+const festus_model = preload("uid://8p4kjlfnxqfg")
+const gideon_model = preload("uid://nejvr5lb58en")
+const lord_henry_model = preload("uid://c00ihspn10862")
+const mainBot_model = preload("uid://dbcgrlqpfq4b8")
+const rachael_model = preload("uid://c0rqvp4pcvqae")
 
 const npc_dialogue_diana = preload("uid://bko0mq8bpgpjm")
 const npc_dialogue_festus = preload("uid://c4qs62uf18ej4")
@@ -23,11 +28,11 @@ var npc_dialogues: Dictionary[Enums.NPCS, DialogueResource] = {
 }
 
 var npc_models: Dictionary[Enums.NPCS, PackedScene] = {
-	Enums.NPCS.DIANA: female_model_scene,
-	Enums.NPCS.LORD_HENRY: male_model_scene,
-	Enums.NPCS.FESTUS: male_model_scene,
-	Enums.NPCS.GIDEON: male_model_scene,
-	Enums.NPCS.MAID_BOT: female_model_scene,
-	Enums.NPCS.RACHAEL: female_model_scene,
-	Enums.NPCS.DEAD_NPC: male_model_scene
+	Enums.NPCS.DIANA: diana_model,
+	Enums.NPCS.LORD_HENRY: lord_henry_model,
+	Enums.NPCS.FESTUS: festus_model,
+	Enums.NPCS.GIDEON: gideon_model,
+	Enums.NPCS.MAID_BOT: mainBot_model,
+	Enums.NPCS.RACHAEL: rachael_model,
+	Enums.NPCS.DEAD_NPC: dead_npc_model
 }
