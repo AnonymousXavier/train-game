@@ -2086,7 +2086,8 @@ tracks/23/keys = PackedFloat32Array(0, 1, 0.32214874, 0.10887927, -0.023735218, 
 
 [sub_resource type="Animation" id="Animation_4lae3"]
 resource_name = "Run"
-length = 1.8
+length = 1.79
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true

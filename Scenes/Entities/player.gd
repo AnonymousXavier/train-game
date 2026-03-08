@@ -8,7 +8,8 @@ signal initiated_dialogue(Area2D)
 @onready var collider = $CollisionShape3D
 @onready var dialogue_interactables_finder: Area3D = $Node3D/Dialogue_Interactables_Finder
 
-const SPEED = 10.0
+const SPEED = 2.0
+
 const JUMP_VELOCITY = 4.5
 
 var direction: Vector3 = Vector3.ZERO

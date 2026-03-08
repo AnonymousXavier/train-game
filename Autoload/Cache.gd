@@ -2,7 +2,7 @@ extends Node
 
 const dead_npc_model = preload("uid://d36xurfnoormt")
 const detective_model = preload("uid://batybj4fh3dx3")
-const diana_model = preload("uid://cse7mmesrdd4u")
+const diana_model = preload("uid://rnbf54uo8sus")
 const festus_model = preload("uid://8p4kjlfnxqfg")
 const gideon_model = preload("uid://nejvr5lb58en")
 const lord_henry_model = preload("uid://c00ihspn10862")

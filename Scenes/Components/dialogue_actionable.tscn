@@ -11,7 +11,10 @@ multichannel_signed_distance_field = true
 height = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_igvm8"]
-albedo_color = Color(1, 0.24705882, 0.12941177, 1)
+transparency = 2
+alpha_scissor_threshold = 1.0
+alpha_antialiasing_mode = 0
+blend_mode = 3
 
 [node name="Dialogue_Actionable" type="Area3D" unique_id=856959269]
 collision_layer = 8
