@@ -1,6 +1,6 @@
 extends Node
 
-@onready var player = null
+@onready var player: Player = null
 @onready var main_camera = null
 @onready var main_viewport = null
 @onready var navigation_region: NavigationRegion3D = null

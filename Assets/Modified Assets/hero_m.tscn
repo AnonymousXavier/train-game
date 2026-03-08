@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://bg48rw8mdtw8d"]
-
-[ext_resource type="PackedScene" uid="uid://bnj631n2ccwx" path="res://Assets/Characters/hero_m.glb" id="1_mbu1q"]
-
-[node name="hero_m" unique_id=1999490402 instance=ExtResource("1_mbu1q")]

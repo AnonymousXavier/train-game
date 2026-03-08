@@ -1,8 +1,9 @@
 extends CharacterBody3D
+class_name Player
 
 signal initiated_dialogue(Area2D)
 
-@onready var model: Node3D = $Node3D
+@onready var model: Node3D = %Model
 @onready var animation_handler: Node3D = $"Animation Handler"
 @onready var collider = $CollisionShape3D
 @onready var dialogue_interactables_finder: Area3D = $Node3D/Dialogue_Interactables_Finder

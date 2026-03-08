@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bnj631n2ccwx"
-path="res://.godot/imported/hero_m.glb-7da8670ef397d26435a3ef7a566d700e.scn"
+uid="uid://ckc5r1ovosnuu"
+path="res://.godot/imported/DETECTIVE TEST 1.glb-5eaaa73f25150659216b264e5b37182e.scn"
 
 [deps]
 
-source_file="res://Assets/Characters/hero_m.glb"
-dest_files=["res://.godot/imported/hero_m.glb-7da8670ef397d26435a3ef7a566d700e.scn"]
+source_file="res://Assets/CHARACTERS WITH ANIMATION/DETECTIVE TEST 1.glb"
+dest_files=["res://.godot/imported/DETECTIVE TEST 1.glb-5eaaa73f25150659216b264e5b37182e.scn"]
 
 [params]
 

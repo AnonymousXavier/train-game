@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3j5nx7o3xxnd" path="res://Scenes/Entities/player.gd" id="1_nqm6o"]
 [ext_resource type="PackedScene" uid="uid://cs5fg2twu6f4l" path="res://Scenes/Components/animation_handler.tscn" id="3_qbyki"]
-[ext_resource type="PackedScene" uid="uid://bm07sgi2totuo" path="res://Assets/Modified Assets/Player_Model.tscn" id="4_a1rq5"]
+[ext_resource type="PackedScene" uid="uid://df3pvs7b33q0a" path="res://Assets/Modified Assets/animated_detective.tscn" id="4_a1rq5"]
 [ext_resource type="PackedScene" uid="uid://8raypjtinaxn" path="res://Scenes/Components/player_dialogue_states_manager.tscn" id="4_svftf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qbyki"]
@@ -26,13 +26,15 @@ collision_mask = 8
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4323161, 1.0823584)
 shape = SubResource("BoxShape3D_qbyki")
 
-[node name="hero_m" parent="Node3D" unique_id=814196997 instance=ExtResource("4_a1rq5")]
-
 [node name="Animation Handler" parent="." unique_id=1201103088 node_paths=PackedStringArray("model") instance=ExtResource("3_qbyki")]
-model = NodePath("../Node3D/hero_m")
+model = NodePath("../Model")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1047482461]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3520026, 0.1732018)
 shape = SubResource("CapsuleShape3D_qbyki")
 
 [node name="Player Dialogue States Manager" parent="." unique_id=1837422323 instance=ExtResource("4_svftf")]
+
+[node name="Model" parent="." unique_id=1913085064 instance=ExtResource("4_a1rq5")]
+unique_name_in_owner = true
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
