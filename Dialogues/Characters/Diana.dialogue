@@ -1,7 +1,0 @@
-~ start
-if not GameStates.scream_scene_done:
-	Diana: ....
-else:
-	You Got Shot
-	
-=> END
