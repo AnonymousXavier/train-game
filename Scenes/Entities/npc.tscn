@@ -9,6 +9,7 @@ radius = 1.8094959
 
 [node name="NPC" type="Node3D" unique_id=1543861890]
 script = ExtResource("1_nu8im")
+label_distance_from_models_head = null
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=896014902]
 
