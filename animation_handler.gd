@@ -16,7 +16,8 @@ func _process(_delta: float) -> void:
 	state_handler()
 	
 func state_handler():
-	if move_velocity != Vector3.ZERO:
+	print(move_velocity)
+	if not (abs(move_velocity.x) < 0.01 and abs(move_velocity.z) < 0.01 and abs(move_velocity.y) < 0.01):
 		if state == Enums.STATES.RUN:
 			anim_player.animation_finished.emit("")
 		state = Enums.STATES.RUN

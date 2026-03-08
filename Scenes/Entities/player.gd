@@ -8,6 +8,7 @@ signal initiated_dialogue(Area2D)
 @onready var collider = $CollisionShape3D
 @onready var dialogue_interactables_finder: Area3D = $Node3D/Dialogue_Interactables_Finder
 
+
 const SPEED = 2.0
 
 const JUMP_VELOCITY = 4.5
@@ -50,9 +51,9 @@ func _physics_process(delta: float) -> void:
 		handle_movement_controls()
 	else:
 		velocity = Vector3.ZERO
-	
-	animation_handler.move_velocity = velocity
+
 	Misc.tween_look_at_target(model, get_move_rotation(), delta)
 	
 	handle_dialogue_interactions()
 	move_and_slide()
+	animation_handler.move_velocity = velocity
