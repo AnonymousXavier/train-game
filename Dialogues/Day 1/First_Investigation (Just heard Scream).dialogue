@@ -1,0 +1,7 @@
+~ start
+???: AHHHHHHHHHHH!!!!!!!!!!!!!
+set GameStates.has_heard_scream_from_seeing_dead_body = true
+- Investigate
+	set GameStates.chose_to_investigate_scream = true
+- Do Nothing => END
+=> END

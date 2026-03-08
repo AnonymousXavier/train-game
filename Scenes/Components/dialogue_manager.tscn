@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://3daerbogit45"]
+
+[node name="Dialogue Manager" type="Node2D"]

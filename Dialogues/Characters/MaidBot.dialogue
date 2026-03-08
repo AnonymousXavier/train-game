@@ -1,0 +1,43 @@
+~ start
+if not GameStates.scream_scene_done:
+	MaidBot: Esteemed Customer, Ill attend to you after resolving the commosion
+else:
+	You: I need your help.
+	Maidbot 723: At your service, valued customer.
+	- Question
+		You: Where were you last night?
+		Maidbot 723: As I said, I spent last night in the storage compartment.
+		You: I thought you spent it in the conductor's cabin.
+		Maidbot 723: Did I say that? Must've been a slip of the tongue. Do pardon me.
+		You: Sure... Did you notice any strange noises yesterday?
+		Maidbot 723: Nothing worthy of particular note.
+		You: I do not care if it is not noteworthy. I need to know what you heard.
+		Maidbot 723: I heard a conversation.
+		You: Who was speaking? What were they talking about?
+		Maidbot 723: I'm afraid I can't tell you that, Mister David. It's against company privacy policy.
+		You: So you can't tell me anything about that conversation?
+		Maidbot 723: I cannot. Fret not; it was of no particular note. There were no violent intentions.
+	- Pressure
+		You: I know you know something. Spill it.
+		Maidbot 723: I'm afraid I can't do that, Mister David.
+		- Pressure further
+			You: Tell me what you know right now. You won't like what happens if I repeat myself.
+			Maidbot 723 (spazing): Emergency. Emergency. Threat detected by class-2 citizen. Applying self-defense measures.
+			The Maidbot kills you.
+		- Move to other questions
+	- Inquire
+		You: You're a Maidbot, right?
+		Maidbot 723: Affirmative, Mister David. I am designated Maidbot 723 of the Songhai Southern Railway Corporation. My job is to ensure a smooth journey for all passengers. Our current 
+		destination is Eadricsburh. Time until arrival: three days.
+		You: Have you not failed your objectives then? A passenger is dead.
+		Maidbot 723: According to the company handbook, the company is not liable for the physical safety of a passenger. Death is not a registered complaint in the handbook. Hence, all objectives are still currently met.
+		You: Wha...
+		Maidbot 723: I did not. Self-defense is only permitted against customers that actively threaten me. The victim did not threaten me, hence I couldn't have killed him.
+		You: ....
+	- Accuse
+		You: Better admit it, or else...
+		Maidbot 723 (spazing): Emergency. Emergency. Threat detected by class-2 citizen. Applying 
+		self-defense measures.
+		The Maidbot kills you.
+	- Do nothing.
+=> END

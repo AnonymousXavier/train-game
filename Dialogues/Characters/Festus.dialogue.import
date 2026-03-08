@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c4qs62uf18ej4"
+path="res://.godot/imported/Festus.dialogue-bce7925273b5ce9f24f9bc4ec301edb2.tres"
+
+[deps]
+
+source_file="res://Dialogues/Characters/Festus.dialogue"
+dest_files=["res://.godot/imported/Festus.dialogue-bce7925273b5ce9f24f9bc4ec301edb2.tres"]
+
+[params]
+
+defaults=true

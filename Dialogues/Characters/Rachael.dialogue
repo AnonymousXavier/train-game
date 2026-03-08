@@ -1,0 +1,54 @@
+~ start
+if not GameStates.scream_scene_done:
+	Racheal: Did you hear that scream?
+else:
+	You: Good afternoon, ma'am.
+	Racheal: G-good afternoon. What do you want?
+	You: Nothing much. I want to ask you a few questions.
+	Racheal: I've already told Diana everything I know. What more could you want from me?
+	You : Diana's already questioned her?
+	You: Don't worry. It'll only be a few.
+	Racheal (muttering): I saw a dead body for God's sake.
+	- Question
+		You: You are Miss Racheal Solomon, yes?
+		Racheal: Yes, I am. How d—
+		You: Where were you last night?
+		Racheal: In my cabin. That's where I always am.
+		You: Did you hear any strange noises last night?
+		Racheal: N-no. I slept very early. I heard nothing.
+		You: Is that so? Then how exactly did you come across the body?
+		Racheal: I—I was hungry after waking up, so I checked the dining for the Maid. It... it was there I found him.
+		She covers her mouth.
+		Racheal: Oh... oh God, it was horrible. Who in their right minds would even do such a terrible thing?
+		You: I'm sorry for what you had to go through, Miss.
+	- Accuse
+		You: I know you killed him.
+		Racheal: I did not. Why would I do such a thing? What could I possibly gain?
+		You: I'm not you, ma'am. How would I know?
+		Racheal: I think it'd be best if you leave now, detective.
+	- Pressure
+		You: I know you know something. Spill it.
+		Racheal: Wha... I've already told you all I know. What more do you want?
+		Choices: Pressure further, Do nothing.
+		You: Don't waste my time, Miss. I'm warning you.
+		Racheal (frustrated): I think it'd be best if you leave now, detective.
+		You can ask no more questions.
+	- Inqure
+		You: Forgive me for asking, but your dress isn't exactly normal, is it?
+		Racheal: No. My husband passed away recently; we'll be holding the burial in Eadricsburh.
+		You (awkward): Oh... I'm sorry for your loss. Forgive me for asking.
+		Racheal: It's fine. Death is a part of life, isn't it?
+		You: That it is, Miss. What was his name?
+		Racheal: Marcus—Marcus Ford.
+		You: But isn't your surname Solomon?
+		Racheal (hesitates): I—y-yes it is. We agreed on keeping our original surnames.
+		You: That's rather progressive of you.
+		Racheal: Thank you. Can we move on? It still hurts to talk about him.
+		You: Of course, ma'am.
+	- Threaten
+		You: You'd better tell me everything you know, or else!
+		Racheal: What more do you want me to say? I've said it all already. I think it'd be best if you 
+		leave now, detective.
+		No more questioning.
+	- Do Nothing
+=> END

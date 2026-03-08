@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://chdf34evk1waj"]
+
+[node name="Bark System" type="Control" unique_id=1252483894]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hint" type="Label3D" parent="." unique_id=983584117]
+billboard = 2
+shaded = true
+texture_filter = 1
+text = "LOL"
+uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=416881848]

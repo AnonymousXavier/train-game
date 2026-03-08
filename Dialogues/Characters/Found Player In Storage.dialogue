@@ -1,0 +1,21 @@
+~ start
+You head into storage to snoop, only to run into the Maidbot.
+do Misc.move_caught_player_in_storage_room_scene(Enums.NPCS.MAID_BOT)
+Maidbot 723: Esteemed customer, I'm afraid this area is off-limits to you.
+You: My apologies. I was merely searching for anything that could help my investigation into the murder. I reckon an unsolved murder would be terrible on a Maidbot's record.
+Maidbot 723 (calculating): There are clauses that allow passengers into this area for emergencies. Murder should count under emergencies.
+Maidbot 723: Very well. You may search the kitchen. However, you are completely forbidden from the storage area. Under no circumstances are you to enter there.
+You: Thank you kindly for your consideration.
+- Search the kitchen
+	You ruffle through the kitchen, not exactly sure what you're looking for—knives, unknown liquids, strange substances, anything. You find none of those.
+	What you do find is a tray designed for eight cups, two of which are missing.
+	You: Were there always six cups here?
+	Maidbot 723: How strange. I counted eight here just yesterday.
+	You: You thin—
+	Maidbot 723: Redirecting cost of missing cups to train-fare tickets. Thank you for your help, Detective David.
+	You: ... You're welcome.
+	Maidbot 723: Very well. I believe you are done with your search now, Detective. Do enjoy the rest of your night.
+	You (in your mind): Just perfect.
+- Search the storage 
+	You Got Killed
+=> END
