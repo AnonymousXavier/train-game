@@ -14,7 +14,7 @@ static func return_npc_to_default_position(id: Enums.NPCS):
 	var npc = SceneInstances.npc_scenes[id]
 	move_npc(id, npc.default_position, npc.default_position)
 
-static func tween_look_at_target(node: Node3D, target_position: Vector3, delta: float, axis: Vector3 = Vector3.UP, rotation_speed: float = 12.0):
+static func tween_look_at_target(node: Node3D, target_position: Vector3, delta: float, axis: Vector3 = Vector3.UP, rotation_speed: float = 7):
 	var direction = target_position - node.global_position
 	tween_look_at(node, direction, delta, axis, rotation_speed)
 	
