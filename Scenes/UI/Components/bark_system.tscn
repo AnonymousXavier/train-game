@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://chdf34evk1waj"]
 
+[ext_resource type="Texture2D" uid="uid://b4i0e2sp2mq4k" path="res://icon.svg" id="1_wq7nm"]
+
 [node name="Bark System" type="Control" unique_id=1252483894]
 layout_mode = 3
 anchors_preset = 15
@@ -9,10 +11,17 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Hint" type="Label3D" parent="." unique_id=983584117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.041057467)
 billboard = 2
 shaded = true
 texture_filter = 1
+render_priority = 1
 text = "LOL"
 uppercase = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=416881848]
+
+[node name="Background" type="Sprite3D" parent="." unique_id=1068803072]
+modulate = Color(0, 0, 0, 1)
+billboard = 2
+texture = ExtResource("1_wq7nm")
