@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chdf34evk1waj"]
 
-[ext_resource type="Script" uid="uid://brhrevsig6gvf" path="res://Scenes/UI/Components/bark_system.gd" id="1_3khfe"]
+[ext_resource type="Script" path="res://Scenes/UI/Components/bark_system.gd" id="1_3khfe"]
 [ext_resource type="Texture2D" uid="uid://b4i0e2sp2mq4k" path="res://icon.svg" id="1_wq7nm"]
 
 [sub_resource type="Animation" id="Animation_3khfe"]
@@ -138,8 +138,8 @@ modulate = Color(0, 0, 0, 0)
 billboard = 2
 texture = ExtResource("1_wq7nm")
 
-[node name="LifeTime" type="Timer" parent="." unique_id=758618954]
+[node name="LifeTimer" type="Timer" parent="." unique_id=758618954]
 one_shot = true
 
 [connection signal="bark_complete" from="." to="." method="_on_bark_complete"]
-[connection signal="timeout" from="LifeTime" to="." method="_on_life_timer_timeout"]
+[connection signal="timeout" from="LifeTimer" to="." method="_on_life_timer_timeout"]

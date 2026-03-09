@@ -9,7 +9,7 @@ signal bark_complete
 
 @onready var hint_label: Label3D = $Hint
 @onready var background_sprite: Sprite3D = $Background
-@onready var life_time_timer: Timer = $LifeTime
+@onready var life_time_timer: Timer = $LifeTimer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var preparing_to_delete = false
