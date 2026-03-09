@@ -4,6 +4,10 @@ extends Node
 const bark_system_component_scene = preload("uid://chdf34evk1waj")
 const you_died_scene = preload("uid://q820n30yh2ln")
 
+# UTITLITIES
+const train_window_light_scene = preload("uid://u543te2f35nf")
+
+
 # NPC MODELS
 const dead_npc_model = preload("uid://d36xurfnoormt")
 const detective_model = preload("uid://batybj4fh3dx3")
