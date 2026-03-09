@@ -1,14 +1,20 @@
 extends Node
 
+# UI COMPONENTS
+const bark_system_component_scene = preload("uid://chdf34evk1waj")
+const you_died_scene = preload("uid://q820n30yh2ln")
+
+# NPC MODELS
 const dead_npc_model = preload("uid://d36xurfnoormt")
 const detective_model = preload("uid://batybj4fh3dx3")
-const diana_model = preload("uid://rnbf54uo8sus")
+const rachael_model = preload("uid://rnbf54uo8sus")
 const festus_model = preload("uid://8p4kjlfnxqfg")
 const gideon_model = preload("uid://nejvr5lb58en")
 const lord_henry_model = preload("uid://c00ihspn10862")
 const mainBot_model = preload("uid://dbcgrlqpfq4b8")
-const rachael_model = preload("uid://c0rqvp4pcvqae")
+const diana_model = preload("uid://c0rqvp4pcvqae")
 
+# NPC DIALOGUES
 const npc_dialogue_diana = preload("uid://bko0mq8bpgpjm")
 const npc_dialogue_festus = preload("uid://c4qs62uf18ej4")
 const npc_dialogue_gideon = preload("uid://nrcr50h8v7xa")
@@ -16,6 +22,8 @@ const npc_dialogue_henry = preload("uid://ku2u7bq0k2av")
 const npc_dialogue_maidbot = preload("uid://clvsq4mo5clgx")
 const npc_dialogue_rachael = preload("uid://ct68lu8cwy7fn")
 const npc_dialogue_dead_npc = preload("uid://cd3eynxykidcl")
+
+# DICT CONTAINERS
 
 var npc_dialogues: Dictionary[Enums.NPCS, DialogueResource] = {
 	Enums.NPCS.DIANA: npc_dialogue_diana,

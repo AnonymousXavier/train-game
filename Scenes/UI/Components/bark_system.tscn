@@ -1,14 +1,120 @@
 [gd_scene format=3 uid="uid://chdf34evk1waj"]
 
+[ext_resource type="Script" uid="uid://brhrevsig6gvf" path="res://Scenes/UI/Components/bark_system.gd" id="1_3khfe"]
 [ext_resource type="Texture2D" uid="uid://b4i0e2sp2mq4k" path="res://icon.svg" id="1_wq7nm"]
 
-[node name="Bark System" type="Control" unique_id=1252483894]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="Animation" id="Animation_3khfe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hint:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hint:outline_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:update_background_size_now")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_gdi46"]
+resource_name = "popup"
+length = 0.25
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hint:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hint:outline_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:update_background_size_now")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.06666668),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpo47"]
+_data = {
+&"RESET": SubResource("Animation_3khfe"),
+&"popup": SubResource("Animation_gdi46")
+}
+
+[node name="Bark System" type="Node3D" unique_id=1319194419]
+script = ExtResource("1_3khfe")
 
 [node name="Hint" type="Label3D" parent="." unique_id=983584117]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.041057467)
@@ -16,12 +122,24 @@ billboard = 2
 shaded = true
 texture_filter = 1
 render_priority = 1
-text = "LOL"
+outline_modulate = Color(0, 0, 0, 0)
+text = "Lets Goo, Im Happy asf This shit Finna Get Mad AF.. LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+font_size = 48
 uppercase = true
+autowrap_mode = 3
+width = 750.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=416881848]
+libraries/ = SubResource("AnimationLibrary_hpo47")
 
 [node name="Background" type="Sprite3D" parent="." unique_id=1068803072]
-modulate = Color(0, 0, 0, 1)
+transform = Transform3D(1.9023438, 0, 0, 0, 0.3515625, 0, 0, 0, 1.9023438, 0, 0, 0)
+modulate = Color(0, 0, 0, 0)
 billboard = 2
 texture = ExtResource("1_wq7nm")
+
+[node name="LifeTime" type="Timer" parent="." unique_id=758618954]
+one_shot = true
+
+[connection signal="bark_complete" from="." to="." method="_on_bark_complete"]
+[connection signal="timeout" from="LifeTime" to="." method="_on_life_timer_timeout"]

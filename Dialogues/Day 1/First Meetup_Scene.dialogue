@@ -1,16 +1,16 @@
 ~ start
-You: 'A Bloody Mutt'
 
+do Misc.bark("'A Bloody Mutt'")
 do Misc.move_npc_scream_scene(Enums.NPCS.DIANA)
 do wait(4)
+do Misc.bark("Great - Another One")
 
-You: "Great - Another One"
 Diana Robinson: "Wh-what happened here!?"
-You: "I don't know; I just got here.""
+You: "I don't know; I just got here."
 Racheal Solomon: "I-I-I [wait=0.5]"
 Diana Robinson: "Talk, dammit!""
 Racheal Solomon: "I... [wait=0.5] I was on my way to get breakfast when I found him lying there. I swear, I know nothing else."
-Diana Robinson: "Fuck!"
+do Misc.bark("Fuck", Enums.NPCS.DIANA)
 Diana Robinson: "I want everyone in the common dining, now!"
 
 do Misc.move_npc_scream_scene(Enums.NPCS.FESTUS)
@@ -36,25 +36,19 @@ Diana stares at you suspiciously, her gun pointing straight at you
 	The woman keeps her gun pointed at you, with no intention of lowering it
 	You: 'Why is she so suspicious?'
 - Do nothing 
-	You got shot 
-	do Misc.kill_player()
-	=> END
+	You got shot => END
 
 Maidbot 723: "I spent last night in the conductor's cabin. I paid little attention to any movements beyond it"
 The Partner's gun is still pointed at you
 You: "Fuck"
-- Deflect again 
-	do Misc.kill_player()
-	=> END!
+- Deflect again => END!
 - Defend yourself
 	You: "You (hands raised, placatingly): I think it's still too early to jump to conclusions. We have three more days until we reach our destination. Why don't we take our time to investigate this mess."
 	You remove a badge from your pocket
 	You: "I can help. I used to be a detective"
 	"The woman doesn't seem surprised by the revelation."
 	You: 'Does she know me?'
-- Do nothing 
-	do Misc.kill_player()
-	=> END
+- Do nothing => END
 
 She lowers her weapon. Much to your relief.
 Diana Robinson: Very well. You lot have three days—three days to find that bastard before I make my own decision. Trust me, it won't be one any of you will like.
@@ -72,5 +66,5 @@ Festus: "Just great."
 do Misc.return_npc_to_default_position(Enums.NPCS.FESTUS)
 
 [shake rate=20 level=10] Your Morning is Gone [/shake]
-set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.JUST_HEARD_SCREAM] = true
+set GameStates.scream_scene_done = true
 => END

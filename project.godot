@@ -21,12 +21,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://Autoload/Global.gd"
+Enums="*uid://krg82a6lw3v5"
 GameStates="*uid://iqnimt2qyqiu"
-SceneInstances="*res://Autoload/Scene_Instances.gd"
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-Enums="*res://Autoload/Enums.gd"
+SceneInstances="*uid://gl6s5xdhi30v"
 Cache="*uid://mh62pwlfccbh"
+Global="*uid://dup66cd4euqh4"
+DialogueManager="*uid://c3rodes2l3gxb"
 
 [display]
 
@@ -71,7 +71,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogues/Day 1/First Meetup.dialogue", "res://Dialogues/Day 1/First_Investigation (Just heard Scream).dialogue", "res://Dialogues/Characters/Festus.dialogue", "res://Dialogues/Characters/Rachael.dialogue", "res://Dialogues/Characters/Diana.dialogue", "res://Dialogues/Characters/Gideon.dialogue", "res://Dialogues/Characters/Lord Henry.dialogue", "res://Dialogues/Characters/MaidBot.dialogue", "res://Dialogues/Reference.dialogue", "res://Dialogues/Characters/Dead_NPC.dialogue", "res://Dialogues/Characters/Found Player In Storage.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogues/Day 1/First Meetup.dialogue", "res://Dialogues/Day 1/First_Investigation (Just heard Scream).dialogue", "res://Dialogues/Characters/Festus.dialogue", "res://Dialogues/Characters/Rachael.dialogue", "res://Dialogues/Characters/Diana.dialogue", "res://Dialogues/Characters/Gideon.dialogue", "res://Dialogues/Characters/Lord Henry.dialogue", "res://Dialogues/Characters/MaidBot.dialogue", "res://Dialogues/Reference.dialogue", "res://Dialogues/Characters/Dead_NPC.dialogue", "res://Dialogues/Characters/Found Player In Storage.dialogue", "res://Dialogues/Day 1/First Meetup_Scene.dialogue")
 
 [layer_names]
 

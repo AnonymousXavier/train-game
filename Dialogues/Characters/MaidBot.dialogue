@@ -24,6 +24,7 @@ else:
 			You: Tell me what you know right now. You won't like what happens if I repeat myself.
 			Maidbot 723 (spazing): Emergency. Emergency. Threat detected by class-2 citizen. Applying self-defense measures.
 			The Maidbot kills you.
+			do Misc.kill_player()
 		- Move to other questions
 	- Inquire
 		You: You're a Maidbot, right?
@@ -39,5 +40,6 @@ else:
 		Maidbot 723 (spazing): Emergency. Emergency. Threat detected by class-2 citizen. Applying 
 		self-defense measures.
 		The Maidbot kills you.
+		do Misc.kill_player()
 	- Do nothing.
 => END

@@ -3,5 +3,6 @@ if not GameStates.scream_scene_done:
 	Diana: ....
 else:
 	You Got Shot
+	do Misc.kill_player()
 	
 => END
