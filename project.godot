@@ -21,12 +21,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://Autoload/Global.gd"
+Enums="*uid://krg82a6lw3v5"
 GameStates="*uid://iqnimt2qyqiu"
-SceneInstances="*res://Autoload/Scene_Instances.gd"
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-Enums="*res://Autoload/Enums.gd"
+SceneInstances="*uid://gl6s5xdhi30v"
 Cache="*uid://mh62pwlfccbh"
+Global="*uid://dup66cd4euqh4"
+DialogueManager="*uid://c3rodes2l3gxb"
 
 [display]
 

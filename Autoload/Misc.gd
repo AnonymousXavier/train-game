@@ -55,3 +55,11 @@ static func get_top_of_models_head(model: Node3D, position: Vector3):
 	
 	return Vector3(0, mesh_height, 0) + position
 	
+static func reset_scene_to_last_checkpoint():
+	SceneInstances.player.global_position = SceneInstances.player_default_position_marker.global_position
+	for npc_id in Enums.NPCS.values():
+		var npc = SceneInstances.npc_scenes[npc_id] as NPC
+		npc.global_position = npc.default_position
+		
+static func kill_player():
+	SceneInstances.you_died_control_scene.show()

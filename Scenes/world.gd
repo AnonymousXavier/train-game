@@ -4,13 +4,20 @@ class_name World
 @onready var npcs: Node3D = $NPCs ## NPCs Node 2D containing the NPCS arranged in the same order as the enum
 @onready var markers: Node3D = $"Markers/Scream Scene"
 @onready var bark_components: Node3D = $Barks
+@onready var reset_on_death_position_marker: Marker3D = $Reset_On_Death_position
+@onready var game_over_control_node: Control = $GameOver
+
 
 func _ready() -> void:
+	game_over_control_node.hide()
+	
 	update_npc_data_in_scene_instances(npcs, SceneInstances.npc_scenes)
 	update_npc_data_in_scene_instances(markers, SceneInstances.npc_target_positions_for_scream_scene)
 		
 	SceneInstances.npc_target_positions_for_caught_player_in_storage_room_scene[Enums.NPCS.MAID_BOT] = $"Markers/Caught Player Snooping in Storage Room/MaidBot"
 	SceneInstances.bark_components_container = bark_components
+	SceneInstances.player_default_position_marker = reset_on_death_position_marker
+	SceneInstances.you_died_control_scene = game_over_control_node
 	
 func update_npc_data_in_scene_instances(container: Node3D, scene_instances_property: Dictionary):
 	var id = 0

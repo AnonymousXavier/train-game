@@ -2,7 +2,7 @@ extends Node
 
 # UI COMPONENTS
 const bark_system_component_scene = preload("uid://chdf34evk1waj")
-
+const you_died_scene = preload("uid://q820n30yh2ln")
 
 # NPC MODELS
 const dead_npc_model = preload("uid://d36xurfnoormt")

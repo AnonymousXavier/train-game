@@ -18,4 +18,5 @@ You: Thank you kindly for your consideration.
 	You (in your mind): Just perfect.
 - Search the storage 
 	You Got Killed
+	do Misc.kill_player()
 => END
