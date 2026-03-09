@@ -13,6 +13,7 @@ class_name NPC
 const move_speed: float = 15.0 
 var target_to_focus_on: Vector3
 var default_position: Vector3
+var top_of_npc_head_position: Vector3
 
 func _ready() -> void:
 	default_position = global_position
@@ -50,13 +51,12 @@ func focus_on_target(delta: float):
 	Misc.tween_look_at_target(self, target_to_focus_on, delta)
 	
 func put_hint_and_npc_name_label_labels_above_models_head():
-	var mesh: MeshInstance3D = model.get_child(0) # All models have a single mesh
-	var mesh_height: float = mesh.get_aabb().size.y * model.scale.y
-	var perfect_height = mesh_height * 1.5 + global_position.y
+	var perfect_height = Misc.get_top_of_models_head(model, global_position).y
 	
 	var dialgue_hint_label = dialogue_actionable.hint_label
 	npc_name_label.global_position.y = perfect_height + label_distance_from_models_head
 	dialgue_hint_label.global_position.y = perfect_height + label_distance_from_models_head * 2.2
 	
-	
+	top_of_npc_head_position = global_position
+	top_of_npc_head_position.y = npc_name_label.global_position.y
 	

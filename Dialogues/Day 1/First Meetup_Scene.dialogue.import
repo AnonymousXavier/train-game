@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bqgbfglvrgv0a"
+path="res://.godot/imported/First Meetup_Scene.dialogue-36f6716c5aca27c0765dc2ec2d6dd2dc.tres"
+
+[deps]
+
+source_file="res://Dialogues/Day 1/First Meetup_Scene.dialogue"
+dest_files=["res://.godot/imported/First Meetup_Scene.dialogue-36f6716c5aca27c0765dc2ec2d6dd2dc.tres"]
+
+[params]
+
+defaults=true

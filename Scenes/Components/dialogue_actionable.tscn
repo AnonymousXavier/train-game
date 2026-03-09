@@ -33,7 +33,5 @@ font = SubResource("SystemFont_421l1")
 mesh = SubResource("CylinderMesh_igvm8")
 surface_material_override/0 = SubResource("StandardMaterial3D_igvm8")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_area_exited"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://q820n30yh2ln"]
+
+[sub_resource type="SystemFont" id="SystemFont_p2hlr"]
+font_names = PackedStringArray("Consolas")
+font_weight = 999
+font_stretch = 200
+
+[sub_resource type="LabelSettings" id="LabelSettings_hgirr"]
+font = SubResource("SystemFont_p2hlr")
+font_size = 63
+font_color = Color(1, 0, 0, 1)
+outline_size = 23
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameOver" type="Control" unique_id=953284220]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1442642216]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2084305032]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=84822401]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+text = "YOU  DIED"
+label_settings = SubResource("LabelSettings_hgirr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=691978257]
+layout_mode = 2
+size_flags_vertical = 3
+text = "RETURN TO LAST CHECKPOINT"

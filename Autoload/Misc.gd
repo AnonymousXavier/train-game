@@ -32,3 +32,26 @@ static func tween_look_at(node: Node3D, direction: Vector3, delta: float,axis: V
 static func move_caught_player_in_storage_room_scene(id: Enums.NPCS):
 	var target_marker = SceneInstances.npc_target_positions_for_caught_player_in_storage_room_scene[id]
 	move_npc(id, target_marker.global_position, SceneInstances.player.global_position)
+	
+static func bark(message: String, npc_id=null):
+	var npc
+	if npc_id != null:
+		npc = SceneInstances.npc_scenes[npc_id]
+	else:
+		npc = SceneInstances.player
+		
+	var bark_component: Bark_Component = Cache.bark_system_component_scene.instantiate()
+
+	SceneInstances.bark_components_container.add_child(bark_component)
+	bark_component.hint_label.text = message
+	bark_component.set_position_above(get_top_of_models_head(npc.model, npc.global_position))
+	bark_component.show_bark()
+	
+	await bark_component.bark_complete
+	
+static func get_top_of_models_head(model: Node3D, position: Vector3):
+	var mesh: MeshInstance3D = model.get_child(0) # All models have a single mesh
+	var mesh_height: float = mesh.get_aabb().size.y * model.scale.y * 1.45
+	
+	return Vector3(0, mesh_height, 0) + position
+	

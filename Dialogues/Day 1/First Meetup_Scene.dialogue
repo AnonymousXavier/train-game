@@ -1,16 +1,16 @@
 ~ start
-You: 'A Bloody Mutt'
 
+do Misc.bark("'A Bloody Mutt'")
 do Misc.move_npc_scream_scene(Enums.NPCS.DIANA)
 do wait(4)
+do Misc.bark("Great - Another One")
 
-You: "Great - Another One"
 Diana Robinson: "Wh-what happened here!?"
-You: "I don't know; I just got here.""
+You: "I don't know; I just got here."
 Racheal Solomon: "I-I-I [wait=0.5]"
 Diana Robinson: "Talk, dammit!""
 Racheal Solomon: "I... [wait=0.5] I was on my way to get breakfast when I found him lying there. I swear, I know nothing else."
-Diana Robinson: "Fuck!"
+do Misc.bark("Fuck", Enums.NPCS.DIANA)
 Diana Robinson: "I want everyone in the common dining, now!"
 
 do Misc.move_npc_scream_scene(Enums.NPCS.FESTUS)
@@ -66,5 +66,5 @@ Festus: "Just great."
 do Misc.return_npc_to_default_position(Enums.NPCS.FESTUS)
 
 [shake rate=20 level=10] Your Morning is Gone [/shake]
-set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.JUST_HEARD_SCREAM] = true
+set GameStates.scream_scene_done = true
 => END
