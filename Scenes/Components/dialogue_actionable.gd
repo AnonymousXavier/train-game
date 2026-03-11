@@ -41,6 +41,7 @@ func _process(_delta: float) -> void:
 
 func start_dialogue():
 	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
+	print(dialogue_resource.titles.keys())
 
 func _on_body_entered(_body: Node3D) -> void:
 	if start_on_player_detected:

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://chpc4etuoxnjx"]
 
-[ext_resource type="Script" path="res://Modified Asstes/train.gd" id="1_adcqo"]
+[ext_resource type="Script" uid="uid://dsew68w0fa7by" path="res://Modified Asstes/train.gd" id="1_adcqo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dglqm"]
 
@@ -1279,7 +1279,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.648224, 0, 0)
 [node name="Light" type="Node3D" parent="." unique_id=1661780949]
 
 [node name="LightsMarkersBack" type="Node3D" parent="." unique_id=2023771971]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 14.280575)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 83.835236, 0, 9.073549)
 
 [node name="LowerClass1" type="Marker3D" parent="LightsMarkersBack" unique_id=1883122557]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.956345, 0, 0)
