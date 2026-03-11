@@ -36,19 +36,25 @@ Diana stares at you suspiciously, her gun pointing straight at you
 	The woman keeps her gun pointed at you, with no intention of lowering it
 	You: 'Why is she so suspicious?'
 - Do nothing 
-	You got shot => END
+	You got shot 
+	do Misc.kill_player()
+	=> END
 
 Maidbot 723: "I spent last night in the conductor's cabin. I paid little attention to any movements beyond it"
 The Partner's gun is still pointed at you
 You: "Fuck"
-- Deflect again => END!
+- Deflect again 
+	do Misc.kill_player()
+	=> END!
 - Defend yourself
 	You: "You (hands raised, placatingly): I think it's still too early to jump to conclusions. We have three more days until we reach our destination. Why don't we take our time to investigate this mess."
 	You remove a badge from your pocket
 	You: "I can help. I used to be a detective"
 	"The woman doesn't seem surprised by the revelation."
 	You: 'Does she know me?'
-- Do nothing => END
+- Do nothing 
+	do Misc.kill_player()
+	=> END
 
 She lowers her weapon. Much to your relief.
 Diana Robinson: Very well. You lot have three days—three days to find that bastard before I make my own decision. Trust me, it won't be one any of you will like.
