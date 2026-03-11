@@ -40,8 +40,7 @@ func _process(_delta: float) -> void:
 		hint_label.hide()
 
 func start_dialogue():
-	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
-	print(dialogue_resource.titles.keys())
+	DialogueManager.show_dialogue_balloon_scene(Cache.custom_dialogue_balloon_scene, dialogue_resource, dialogue_start)
 
 func _on_body_entered(_body: Node3D) -> void:
 	if start_on_player_detected:
@@ -63,8 +62,11 @@ func _on_dialogue_finished(ended_dialogue_resource: DialogueResource):
 		GameStates.scene_on_going = false
 		if delete_on_dialogue_finished:
 			queue_free()
+		print("Matched")
+		SceneInstances.current_dialogue_actionable = null
 		
 func _on_dialogue_started(started_dialogue_resource: DialogueResource):
 	if dialogue_resource == started_dialogue_resource:
 		dialogue_started.emit()
 		GameStates.scene_on_going = true
+		SceneInstances.current_dialogue_actionable = self

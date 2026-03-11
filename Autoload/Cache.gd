@@ -3,6 +3,7 @@ extends Node
 # UI COMPONENTS
 const bark_system_component_scene = preload("uid://chdf34evk1waj")
 const you_died_scene = preload("uid://q820n30yh2ln")
+const custom_dialogue_balloon_scene = preload("uid://bkhsw46x64rko")
 
 # UTITLITIES
 const train_window_light_scene = preload("uid://u543te2f35nf")

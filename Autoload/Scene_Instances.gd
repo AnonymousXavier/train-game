@@ -8,6 +8,7 @@ extends Node
 
 @onready var player_default_position_marker: Marker3D = null
 @onready var you_died_control_scene: Control = null
+@onready var current_dialogue_actionable: Dialogue_Actionable = null
 
 var npc_scenes: Dictionary[Enums.NPCS, NPC] = {}
 var npc_target_positions_for_scream_scene: Dictionary[Enums.NPCS, Marker3D] = {}

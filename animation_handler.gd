@@ -17,19 +17,20 @@ func _process(_delta: float) -> void:
 	
 func state_handler():
 	if move_velocity != Vector3.ZERO:
-		if state == Enums.STATES.RUN:
-			anim_player.animation_finished.emit("")
-		state = Enums.STATES.RUN
+		change_state_to(Enums.STATES.WALK)
 	else:
-		if state == Enums.STATES.IDLE:
-			anim_player.animation_finished.emit("")
-		state = Enums.STATES.IDLE
+		change_state_to(Enums.STATES.IDLE)
+		
+func change_state_to(new_state: Enums.STATES):
+	if state == new_state:
+		anim_player.animation_finished.emit("")
+	state = new_state
 	
 func _on_animation_finished(_anim_name: String):
 	match state:
 		Enums.STATES.IDLE:
 			anim_player.play("Idle")
-		Enums.STATES.RUN:
-			anim_player.play("Run")
+		Enums.STATES.WALK:
+			anim_player.play("Walk")
 	
 	

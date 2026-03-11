@@ -75,5 +75,7 @@ Festus: "Just great."
 do Misc.return_npc_to_default_position(Enums.NPCS.FESTUS)
 
 [shake rate=20 level=10] Your Morning is Gone [/shake]
+
+~ skip_point
 set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.JUST_HEARD_SCREAM] = true
 => END
