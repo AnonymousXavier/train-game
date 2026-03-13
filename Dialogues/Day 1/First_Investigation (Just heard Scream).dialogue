@@ -1,6 +1,6 @@
 ~ start
-???: AHHHHHHHHHHH!!!!!!!!!!!!!
 set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE] = true
+???: AHHHHHHHHHHH!!!!!!!!!!!!!
 - Investigate
 	set GameStates.chose_to_investigate_scream = true
 - Do Nothing => END

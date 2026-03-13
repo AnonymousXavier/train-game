@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://chpc4etuoxnjx"]
 
 [ext_resource type="Script" uid="uid://dsew68w0fa7by" path="res://Modified Asstes/train.gd" id="1_adcqo"]
+[ext_resource type="PackedScene" uid="uid://dvwxnwu8ffrpp" path="res://Scenes/Components/door.tscn" id="2_im0ia"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dglqm"]
 
@@ -1334,3 +1335,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.35823, 0, 0)
 
 [node name="StorageRoom4" type="Marker3D" parent="LightsMarkersBack" unique_id=650274834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.648224, 0, 0)
+
+[node name="Doors" type="Node3D" parent="." unique_id=1040960927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.72404, -0.33431128, 0)
+
+[node name="Lower-Middle Class" parent="Doors" unique_id=292311750 instance=ExtResource("2_im0ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18403149, -0.093007684, 0)
+
+[node name="Middle-High Class" parent="Doors" unique_id=660020572 instance=ExtResource("2_im0ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.006214, -0.093007684, 0)
+
+[node name="High Class-Dinning" parent="Doors" unique_id=1902056158 instance=ExtResource("2_im0ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.857975, -0.092999995, 0)
+
+[node name="Dinning - Kitchen" parent="Doors" unique_id=1721466301 instance=ExtResource("2_im0ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.372, -0.093, 0)
+
+[node name="Kitched - Storage" parent="Doors" unique_id=431352748 instance=ExtResource("2_im0ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.43371, -0.092999995, 0)

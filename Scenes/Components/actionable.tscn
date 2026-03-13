@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://byd2wy05q1j4b"]
+
+[ext_resource type="Script" uid="uid://0t4os20loi3c" path="res://Scenes/Components/Actionables.gd" id="1_c4ogw"]
+
+[sub_resource type="SystemFont" id="SystemFont_8md83"]
+font_names = PackedStringArray("Comic Sans MS")
+subpixel_positioning = 0
+multichannel_signed_distance_field = true
+
+[node name="Actionable" type="Area3D" unique_id=260504243]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_c4ogw")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=506793479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2986841, 0)
+pixel_size = 0.01
+billboard = 1
+double_sided = false
+no_depth_test = true
+text = "Open (X)"
+font = SubResource("SystemFont_8md83")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
