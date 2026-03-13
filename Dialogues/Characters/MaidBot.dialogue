@@ -1,5 +1,5 @@
 ~ start
-if not GameStates.scream_scene_done:
+if not GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE]:
 	MaidBot: Esteemed Customer, Ill attend to you after resolving the commosion
 else:
 	You: I need your help.

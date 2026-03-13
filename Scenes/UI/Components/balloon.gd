@@ -115,8 +115,6 @@ func start(with_dialogue_resource: DialogueResource = null, title: String = "", 
 		start_from_title = title
 	dialogue_line = await dialogue_resource.get_next_dialogue_line(start_from_title, temporary_game_states)
 	show()
-	
-	%Skip.visible = dialogue_resource.titles.keys().has("skip_point")
 
 
 ## Apply any changes to the balloon given a new [DialogueLine].
@@ -211,9 +209,11 @@ func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 
 
 func _on_skip_pressed() -> void:
-	print("Initiated Skipping")
-	DialogueManager.get_next_dialogue_line(dialogue_resource, "skip_point")
-	Misc.reset_npcs_to_default_positions()
-	queue_free()
+	while dialogue_line != null:
+		if dialogue_line.responses.size() > 0: break
+		var scout_line = await dialogue_resource.get_next_dialogue_line(dialogue_line.next_id)
+		if scout_line == null or scout_line.id == dialogue_line.id: break 
+
+		dialogue_line = scout_line
 
 #endregion

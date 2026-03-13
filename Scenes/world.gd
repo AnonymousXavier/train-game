@@ -7,7 +7,6 @@ class_name World
 @onready var reset_on_death_position_marker: Marker3D = $Reset_On_Death_position
 @onready var game_over_control_node: Control = $GameOver
 
-
 func _ready() -> void:
 	game_over_control_node.hide()
 	

@@ -1,5 +1,5 @@
 ~ start
-if not GameStates.scream_scene_done:
+if not GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE]:
 	Racheal: Did you hear that scream?
 else:
 	You: Good afternoon, ma'am.

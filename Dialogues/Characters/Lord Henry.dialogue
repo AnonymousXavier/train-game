@@ -1,5 +1,5 @@
 ~ start
-if not GameStates.scream_scene_done:
+if not GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE]:
 	Lord Henry: Let me be
 else:
 	The Noble Ignores you, His Bodyguard Gideon, Sends you back

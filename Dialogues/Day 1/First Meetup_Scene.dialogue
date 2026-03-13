@@ -55,7 +55,8 @@ You: "Fuck"
 - Do nothing 
 	do Misc.kill_player()
 	=> END
-
+	
+set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE] = true
 She lowers her weapon. Much to your relief.
 Diana Robinson: Very well. You lot have three days—three days to find that bastard before I make my own decision. Trust me, it won't be one any of you will like.
 She bends down to the corpse, gently covers his still-open eyes, then takes his badge, a book from his coat, and a small locket from his neck. The train remains silent as she stands and heads out of the cabin.
@@ -72,6 +73,6 @@ Festus: "Just great."
 do Misc.return_npc_to_default_position(Enums.NPCS.FESTUS)
 
 [shake rate=20 level=10] Your Morning is Gone [/shake]
-~ skip_point
-set GameStates.scream_scene_done = true
+
+
 => END
