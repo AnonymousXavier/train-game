@@ -6,9 +6,11 @@ signal in_range(body)
 signal out_of_range(body)
 
 @onready var hint_label: Label3D = $Label3D
+@export var prompt_text: String = "Talk (X)"
 var body_in_range = false
 
 func _ready() -> void:
+	hint_label.text = prompt_text
 	hint_label.hide()
 	
 func _input(event: InputEvent) -> void:

@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://chpc4etuoxnjx"]
 
 [ext_resource type="Script" uid="uid://dsew68w0fa7by" path="res://Modified Asstes/train.gd" id="1_adcqo"]
+[ext_resource type="PackedScene" uid="uid://c8dguhvy08xux" path="res://Modified Asstes/Chair.tscn" id="2_beety"]
 [ext_resource type="PackedScene" uid="uid://dvwxnwu8ffrpp" path="res://Scenes/Components/door.tscn" id="2_im0ia"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dglqm"]
@@ -1175,16 +1176,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ep8i3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavRegion/Lower Class Cargo/Cube_006/StaticBody3D" unique_id=1811788246]
 shape = SubResource("ConcavePolygonShape3D_s3eru")
 
-[node name="Cube_008" type="MeshInstance3D" parent="NavRegion/Lower Class Cargo" unique_id=101839813]
+[node name="Cube_008" parent="NavRegion/Lower Class Cargo" unique_id=1938928181 instance=ExtResource("2_beety")]
 transform = Transform3D(0.8959022, 0, 0, 0, 0.58421576, 0, 0, 0, 1.1975101, 11.45154, -2.389062, -2.831372)
-mesh = SubResource("ArrayMesh_e8iqn")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_ep8i3")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavRegion/Lower Class Cargo/Cube_008" unique_id=1389762178]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavRegion/Lower Class Cargo/Cube_008/StaticBody3D" unique_id=1681002685]
-shape = SubResource("ConcavePolygonShape3D_s48fx")
+surface_material_override/0 = null
 
 [node name="Cube_010" type="MeshInstance3D" parent="NavRegion/Lower Class Cargo" unique_id=769054315]
 transform = Transform3D(0.8959022, 0, 0, 0, 0.58421576, 0, 0, 0, 1.1975101, -6.9045544, -2.389062, -2.9006493)

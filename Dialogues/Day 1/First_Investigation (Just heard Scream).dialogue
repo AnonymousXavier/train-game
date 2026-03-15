@@ -1,5 +1,5 @@
 ~ start
-set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.SCREAM_INVESTIGATION_SCENE] = true
+set GameStates.Checkpoint_One[Enums.CHECKPOINT_ONE.JUST_HEARD_SCREAM] = true
 ???: AHHHHHHHHHHH!!!!!!!!!!!!!
 - Investigate
 	set GameStates.chose_to_investigate_scream = true
